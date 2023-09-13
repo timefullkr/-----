@@ -4,8 +4,9 @@ import random
 import string
 
 def rnd_str(n=5):
-  # 이미지 파일 명을 만들기 위한  임의 문자 발생
-  return ''.join(random.choices(string.digits, k=n))
+  # 이미지 파일 명을 만들기 위한  임의 숫자 발생
+  characters = string.ascii_letters + string.digits 
+  return ''.join(random.choices(characters, k=n))
 
 # 이미지 URL
 url = "http://jeju-s.jje.hs.kr/boardCnts/fileDown.do?m=0203&s=jeju-s&fileSeq=8785962"
@@ -23,4 +24,4 @@ with open(file_path, "wb") as file:
    file.write(response.content)
 print("이미지 다운로드 완료!")
 
-# 심풀하고 AI 활용한 학교 홈 만들기
+# 심풀한 AI 학교 홈 만들기 추천
