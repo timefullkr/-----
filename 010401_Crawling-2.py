@@ -1,10 +1,6 @@
-# pip install requests
-# pip install beautifulsoup4
-import requests
-from bs4 import BeautifulSoup
-import imageDown2
 
-# naver.com 웹 페이지를 가져옴
+# pip install beautifulsoup4
+from bs4 import BeautifulSoup
 
 from urllib.request import urlopen
 
@@ -18,14 +14,16 @@ print( "="*100)
 print( items)
 print( "="*100)
 print( items[0].text)
+print( items[0]["href"])
 print( "="*100)
-for item in items:
+# for item in items:
    
-   print( item)
-   print( item.get_text())
-   print( "-"*100)
-   url=item["href"]
-   print( url)
-   print( "이미지 url=" ,f"http://jeju-s.jje.hs.kr{url}")
-   print( "-"*100)
+#    print( item)
+#    print( item.text)
+#    print( "-"*100)
+#    url=item["href"]
+#    print( url)
+#    imageUrl=f"http://jeju-s.jje.hs.kr{url}"
+#    print( "이미지 url=" ,imageUrl)
+#    print( "-"*100)
     
