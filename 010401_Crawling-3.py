@@ -8,10 +8,11 @@ soup = BeautifulSoup(html, 'html.parser')
 
 items= soup.select('.fieldBox > dl > dd a')
 
+
 for item in items:
    url=item["href"]
-   
    imageUrl=f"http://jeju-s.jje.hs.kr/{url}"
-   # ret=imageDownFun.imageDown(imageUrl)
    print( imageUrl )
+   # ret=imageDownFun.imageDown(imageUrl)
+   # print(ret)
     
