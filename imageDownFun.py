@@ -8,7 +8,10 @@ def rnd_str(n=5):
   return ''.join(random.choices(characters, k=n))
 
 def imageDown(url):
-
+   
+    if  "jpg" in url or "png" in url :
+         return 'jpg 또는 png 파일만 다운 가능'
+    
     folder_name = "images"
     if not os.path.exists( folder_name ):
        os.makedirs(folder_name)
