@@ -16,8 +16,9 @@ print( "="*100)
 print( items[0].text)
 print( items[0]["href"])
 print( "="*100)
+
 # for item in items:
-   
+ 
 #    print( item)
 #    print( item.text)
 #    print( "-"*100)
